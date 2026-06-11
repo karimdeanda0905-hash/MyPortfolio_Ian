@@ -220,7 +220,7 @@ const proyectos = [
   },
   {
     imagen: proyecto6,
-    titulo: 'Actividades Lborales',
+    titulo: 'Actividades Laborales',
     descripcion: 'Algunas de las actividades realidadas en mi entonro de trabajo en el Mcdonalds, actividad llamada puerta.'
   }
 ]
