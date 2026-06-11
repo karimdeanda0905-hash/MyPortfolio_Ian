@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #B6CFE4,
+    #393027
+  );
+  color: white;
+}
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.portfolio-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 68px;
+  background: #ffffff;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.portfolio-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1D9E75;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.portfolio-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  position: relative;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: color 0.2s, background 0.2s;
+  cursor: pointer;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: calc(100% - 24px);
+  height: 1.5px;
+  background: #1D9E75;
+  border-radius: 2px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover {
+  color: #1a1a1a;
+  background: #f4f4f4;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.nav-link.active {
+  color: #1a1a1a;
+}
+
+.nav-cta {
+  margin-left: 12px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #085041;
+  background: #E1F5EE;
+  border: 0.5px solid #5DCAA5;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+.nav-cta:hover {
+  background: #9FE1CB;
+  border-color: #1D9E75;
+}
+
+.nav-cta:active {
+  transform: scale(0.97);
+}
+
