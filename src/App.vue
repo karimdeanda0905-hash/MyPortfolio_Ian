@@ -3,9 +3,10 @@
   <header class="portfolio-header">
     <a class="portfolio-logo" href="#">
       <span class="logo-dot"></span>
-      My Portfolio
+      Mi Portfolio
     </a>
  
+    
     <nav class="portfolio-nav" aria-label="Navegación principal">
       <a class="nav-link active" href="#home" onclick="setActive(this)">
         <i class="ti ti-home" style="font-size:15px; vertical-align:-2px; margin-right:5px;"></i>
@@ -13,7 +14,7 @@
       </a>
       <a class="nav-link" href="#about" onclick="setActive(this)">
         <i class="ti ti-user" style="font-size:15px; vertical-align:-2px; margin-right:5px;"></i>
-        About
+        About me
       </a>
       <a class="nav-link" href="#gallery" onclick="setActive(this)">
         <i class="ti ti-photo" style="font-size:15px; vertical-align:-2px; margin-right:5px;"></i>
@@ -33,11 +34,11 @@
     <div class="container text-center">
 
       <h1 class="display-3 fw-bold">
-        Welcome to My Portfolio
+        Bienvenid@ a mi Portafolio
       </h1>
 
       <p class="lead">
-        Information Technology Student
+        Informacion Estudiantil y algunos de mis proyectos realizados
       </p>
 
     </div>
@@ -76,7 +77,7 @@
     <div class="container">
 
       <h2 class="text-center mb-4">
-        Gallery
+        Galeria Personal
       </h2>
 
       <div class="row g-4">
@@ -121,7 +122,7 @@
   <section id="contact" class="container py-5">
 
     <h2 class="text-center mb-4">
-      Contact
+      Contactame por este medio
     </h2>
 
     <form @submit.prevent="sendForm">
@@ -210,8 +211,8 @@ const proyectos = [
   },
   {
     imagen: proyecto4,
-    titulo: 'Diseño en Canva',
-    descripcion: 'Material gráfico y contenido visual realizado en Canva.'
+    titulo: 'Blender 2D',
+    descripcion: 'Vistazo de un Proyecto hecho en Blender con un personaje hecho por mi.'
   },
   {
     imagen: proyecto5,
